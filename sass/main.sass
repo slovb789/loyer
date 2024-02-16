@@ -70,7 +70,7 @@ button
   border: none
 
 .container
-  max-width: 1360px
+  max-width: 1440px
 
 .nav
   display: flex
@@ -603,8 +603,8 @@ button
 
     > video
       position: absolute
-      right: 0
-      bottom: 0
+      right: 59px
+      bottom: 9px
       width: 400px
       height: 200px
       background-color: black
@@ -614,8 +614,8 @@ button
       display: block
       position: absolute
       background-color: black
-      bottom: 70px
-      right: 170px
+      bottom: 80px
+      right: 230px
       width: 60px
       height: 60px
       cursor: pointer
@@ -933,7 +933,7 @@ button
   .container_slider
     display: block
     width: 100%
-    margin-left: 20px
+    margin-left: 60px
 
     .slider_inner
       display: flex
@@ -1002,6 +1002,141 @@ button
               font-size: 18px
               font-weight: 400
 
+  .dots_slider
+    display: flex
+    justify-content: center
+    margin-right: 60px
+
+    ul
+      display: flex
+      list-style-type: none
+      margin-top: 23px
+
+      li
+        margin-right: 10px
+
+        &.slick-active
+          button::before
+            background-color: $accent_turquois
+            box-shadow: 0 0 0 2px #F0F0F0, 0 0 0 3px $accent_turquois
+
+
+        button
+          font-size: 0
+
+          &::before
+            display: block
+            content: ""
+            background-color: #B2B2B2
+            width: 10px
+            height: 10px
+            border-radius: 50%
+
+.news
+  display: flex
+  flex-direction: column
+  margin-top: 120px
+
+  .news_text
+    display: inline-flex
+    flex-wrap: wrap
+    font-size: 64px
+    font-weight: 400
+    text-transform: uppercase
+    max-width: 1000px
+    line-height: 75px
+
+    span
+      color: $accent_turquois
+
+    span:first-child
+      margin-left: 240px
+
+  .news_posts
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 60px
+
+    .news_posts-item
+      max-width: 420px
+      border-bottom: 1px solid black
+
+
+      .news_posts-date
+        font-size: 14px
+        font-weight: 500
+
+      .news_posts-text
+        max-width: 320px
+        text-transform: uppercase
+        font-weight: 500
+        color: $accent_turquois
+        margin-left: 100px
+        text-align: right
+
+  .news_link
+    display: flex
+    justify-content: center
+
+    a
+      display: inline-flex
+      margin-top: 40px
+      text-transform: uppercase
+      text-decoration: underline
+      font-weight: 500
+      font-size: 18px
+      color: $accent_turquois
+      transition: all .3s
+
+      &:hover
+        color: darken($accent_turquois, 15%)
+
+.faq
+  display: flex
+  flex-direction: column
+  margin-top: 120px
+
+  .faq_text
+    font-size: 64px
+    font-weight: 400
+    text-transform: uppercase
+    color: $accent_turquois
+    margin-left: 240px
+    margin-bottom: 80px
+
+  .faq_accord
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+    .faq_accord-item
+      padding: 20px
+      font-weight: 500
+      line-height: 28px
+      border-bottom: 1px solid
+      border-radius: 10px
+
+
+      .faq_accord-question
+        display: block
+        margin-bottom: 10px
+        font-size: 24px
+        cursor: pointer
+        transition: transform 0.3s ease-in-out
+
+        &:before
+          display: block
+          content: url("/img/icon/open_icon.svg")
+          float: right
+
+      .accord_question-active:before
+        transform: rotate(-225deg)
+
+
+      .faq_accord-text
+        //display: none
+        font-size: 18px
 
 
 
