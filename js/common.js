@@ -1,15 +1,9 @@
-$(function() {
-
-	new WOW().init();
-
-	$(".hamburger").click(function(){
-		$(this).toggleClass("is-active");
-
-		if($(this).hasClass('is-active')){
-			$('.mnu_top').slideDown(300);
-		}else{
-			$('.mnu_top').slideUp(300);
-		}
-	});
-
+$(document).ready(function () {
+    $('.slider_card').slick({
+        slidesToShow: 1,
+        prevArrow: $('.arrow_left'),
+        nextArrow: $('.arrow_right'),
+        dots: true,
+        appendDots: $('.dots_slider'),
+    });
 });
