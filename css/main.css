@@ -1114,6 +1114,7 @@ button {
   line-height: 28px;
   border-bottom: 1px solid;
   border-radius: 10px;
+  color: black;
 }
 .faq .faq_accord .faq_accord-item .faq_accord-question {
   display: block;
@@ -1131,6 +1132,7 @@ button {
   transform: rotate(-225deg);
 }
 .faq .faq_accord .faq_accord-item .faq_accord-text {
+  display: none;
   font-size: 18px;
 }
 
