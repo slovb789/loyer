@@ -1125,7 +1125,7 @@ button {
 }
 .faq .faq_accord .faq_accord-item .faq_accord-question:before {
   display: block;
-  content: url("/img/icon/open_icon.svg");
+  content: url("img/icon/open_icon.svg");
   float: right;
 }
 .faq .faq_accord .faq_accord-item .accord_question-active:before {
