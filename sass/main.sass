@@ -954,6 +954,10 @@ button
         justify-content: center
         align-items: center
         cursor: pointer
+        transition: all .3s
+
+        &:hover
+          background-color: darken($accent_turquois, 30%)
 
       .slider_card
         width: 100%
@@ -1128,7 +1132,7 @@ button
 
         &:before
           display: block
-          content: url("img/icon/open_icon.svg")
+          content: url("../img/icon/open_icon.svg")
           float: right
 
       .accord_question-active:before
