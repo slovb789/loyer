@@ -46,6 +46,10 @@ body textarea:required:valid {
 
 /*html, body
  * height: 100% */
+html {
+  background-color: #F0F0F0;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -55,7 +59,6 @@ body {
   overflow-x: hidden;
   opacity: 1;
   font-feature-settings: "lnum" 1;
-  background-color: #F0F0F0;
 }
 
 a {
@@ -81,7 +84,8 @@ button {
 }
 
 .container {
-  max-width: 1440px;
+  width: 1440px;
+  max-width: 100%;
 }
 
 .nav {
